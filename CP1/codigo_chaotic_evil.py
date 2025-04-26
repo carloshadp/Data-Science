@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 
 # Carregar o dataset
-df = pd.read_csv('dataset_prova.csv')
+df = pd.read_csv("A://FIAP//2 Sem//MATÉRIAS//Data-Science//CP1//dataset_prova.csv")
 
 df["Índice de Desempenho"] = (df["Horas de Trabalho/Semana"] * df["Satisfação (1-5)"]) / df["Idade"]
 produtividade_media = df["Índice de Desempenho"].mean()
